@@ -1,5 +1,4 @@
 # Cara jalankan projek
-1. clone repositori ini
-2. masuk ke direktori project ini
-3. aktifkan virtual env
-4. jalankan `pip install -r requirements.txt`
+1. Clone repositori ini
+2. Masuk ke direktori project ini
+3. jalankan ```pip install -r requirements.txt```
