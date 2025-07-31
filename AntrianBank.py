@@ -82,7 +82,7 @@ while status:
 
     if queue.size() > 0:
         try:
-            _, _, next_customer = queue.peek()
+            next_customer = queue.peek()[2]
         except IndexError:
             next_customer = "Kosong"
     else:
@@ -111,7 +111,7 @@ while status:
         print(f"Nomor antrian Anda: {nomor}")
     elif n == 3:
         try:
-            _, _, customer_id = queue.pop()
+            customer_id = queue.pop()[2]
             nomorAntrianMeja1 = customer_id
             txt = f"Meja Kasir 1 memanggil nomor: {customer_id}"
             print(txt)
@@ -124,7 +124,8 @@ while status:
             print("Tidak ada antrian untuk Meja Kasir 1.")
     elif n == 4:
         try:
-            _, _, customer_id = queue.pop()
+            # _, _, customer_id = queue.pop()
+            customer_id = queue.pop()[2]
             nomorAntrianMeja2 = customer_id
             txt = f"Meja Kasir 2 memanggil nomor: {customer_id}"
             print(txt)
