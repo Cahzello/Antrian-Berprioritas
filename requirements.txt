@@ -1,0 +1,2 @@
+gTTS~=2.5.4
+playsound3~=3.2.4
